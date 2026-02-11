@@ -312,7 +312,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
             const SizedBox(height: AppConstants.paddingSmall),
 
-            InfoCard(
+            const InfoCard(
               title: 'Platform',
               subtitle: 'Flutter',
               icon: Icons.flutter_dash,
@@ -320,7 +320,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
             const SizedBox(height: AppConstants.paddingSmall),
 
-            InfoCard(
+            const InfoCard(
               title: 'iOS SDK',
               subtitle: '6.6.3',
               icon: Icons.phone_iphone,
@@ -328,7 +328,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
             const SizedBox(height: AppConstants.paddingSmall),
 
-            InfoCard(
+            const InfoCard(
               title: 'Android SDK',
               subtitle: '3.6.2',
               icon: Icons.android,
@@ -391,7 +391,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
             const SizedBox(height: AppConstants.paddingSmall),
 
-            Center(
+            const Center(
               child: Text(
                 'Version 1.0.0',
                 style: AppConstants.captionStyle,

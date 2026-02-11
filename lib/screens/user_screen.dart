@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:iterable_flutter_sdk/iterable_flutter_sdk.dart';
 import '../components/custom_button.dart';
 import '../components/custom_text_field.dart';
-import '../components/info_card.dart';
 import '../utils/constants.dart';
 import '../utils/iterable_config.dart';
 

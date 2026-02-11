@@ -10,8 +10,7 @@ class InfoCard extends StatelessWidget {
   final Color? backgroundColor;
 
   const InfoCard({
-    super.key,
-    required this.title,
+    required this.title, super.key,
     this.subtitle,
     this.icon,
     this.trailing,
@@ -59,10 +58,7 @@ class StatCard extends StatelessWidget {
   final Color? color;
 
   const StatCard({
-    super.key,
-    required this.label,
-    required this.value,
-    required this.icon,
+    required this.label, required this.value, required this.icon, super.key,
     this.color,
   });
 

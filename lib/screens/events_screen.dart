@@ -73,7 +73,7 @@ class _EventsScreenState extends State<EventsScreen> {
 
     try {
       final dataFields = <String, dynamic>{};
-      for (var field in _eventDataFields) {
+      for (final field in _eventDataFields) {
         dataFields.addAll(field);
       }
 
@@ -365,7 +365,7 @@ class _EventsScreenState extends State<EventsScreen> {
                             ],
                           ),
                         );
-                      }).toList(),
+                      }),
                     ],
                   ),
                 ),
@@ -474,7 +474,7 @@ class _EventsScreenState extends State<EventsScreen> {
                     isThreeLine: true,
                   ),
                 );
-              }).toList(),
+              }),
           ],
         ),
       ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iterable_flutter_sdk/iterable_flutter_sdk.dart';
-import '../components/info_card.dart';
+
 import '../components/custom_button.dart';
+import '../components/info_card.dart';
 import '../utils/constants.dart';
 import '../utils/iterable_config.dart';
 
@@ -95,20 +96,20 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               // Welcome Card
-              Card(
+              const Card(
                 color: AppConstants.primaryColor,
                 child: Padding(
-                  padding: const EdgeInsets.all(AppConstants.paddingLarge),
+                  padding: EdgeInsets.all(AppConstants.paddingLarge),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Icon(
+                      Icon(
                         Icons.flutter_dash,
                         size: 48,
                         color: Colors.white,
                       ),
-                      const SizedBox(height: AppConstants.paddingMedium),
-                      const Text(
+                      SizedBox(height: AppConstants.paddingMedium),
+                      Text(
                         'Welcome to Iterable Flutter Tiger',
                         style: TextStyle(
                           fontSize: 24,
@@ -116,8 +117,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: Colors.white,
                         ),
                       ),
-                      const SizedBox(height: AppConstants.paddingSmall),
-                      const Text(
+                      SizedBox(height: AppConstants.paddingSmall),
+                      Text(
                         'Test and explore Iterable SDK features',
                         style: TextStyle(
                           fontSize: 16,
@@ -253,10 +254,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                       const Divider(),
-                      _InfoRow('Platform:', 'Flutter'),
-                      _InfoRow('SDK Version:', '0.1.0'),
-                      _InfoRow('iOS SDK:', '6.6.3'),
-                      _InfoRow('Android SDK:', '3.6.2'),
+                      const _InfoRow('Platform:', 'Flutter'),
+                      const _InfoRow('SDK Version:', '0.1.0'),
+                      const _InfoRow('iOS SDK:', '6.6.3'),
+                      const _InfoRow('Android SDK:', '3.6.2'),
                     ],
                   ),
                 ),

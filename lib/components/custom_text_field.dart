@@ -15,8 +15,7 @@ class CustomTextField extends StatelessWidget {
   final bool enabled;
 
   const CustomTextField({
-    super.key,
-    required this.label,
+    required this.label, super.key,
     this.hint,
     this.controller,
     this.obscureText = false,
@@ -74,11 +73,7 @@ class CustomDropdown<T> extends StatelessWidget {
   final String? hint;
 
   const CustomDropdown({
-    super.key,
-    required this.label,
-    required this.value,
-    required this.items,
-    required this.onChanged,
+    required this.label, required this.value, required this.items, required this.onChanged, super.key,
     this.hint,
   });
 
@@ -95,7 +90,7 @@ class CustomDropdown<T> extends StatelessWidget {
         ),
         const SizedBox(height: AppConstants.paddingSmall),
         DropdownButtonFormField<T>(
-          value: value,
+          initialValue: value,
           items: items,
           onChanged: onChanged,
           decoration: InputDecoration(

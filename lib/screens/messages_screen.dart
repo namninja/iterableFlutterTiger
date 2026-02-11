@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iterable_flutter_sdk/iterable_flutter_sdk.dart';
 import '../components/custom_button.dart';
-import '../components/info_card.dart';
 import '../utils/constants.dart';
 
 class MessagesScreen extends StatefulWidget {
@@ -125,7 +124,7 @@ class _MessagesScreenState extends State<MessagesScreen> {
                 ),
               ),
               const SizedBox(height: AppConstants.paddingLarge),
-              Text(
+              const Text(
                 'Message Details',
                 style: AppConstants.headingStyle,
               ),
@@ -261,7 +260,7 @@ class _MessagesScreenState extends State<MessagesScreen> {
                                 ),
                               ),
                               const SizedBox(height: AppConstants.paddingSmall),
-                              Text(
+                              const Text(
                                 'In-app messages will appear here when sent from Iterable',
                                 style: AppConstants.captionStyle,
                                 textAlign: TextAlign.center,
@@ -334,7 +333,7 @@ class _MessagesScreenState extends State<MessagesScreen> {
                                 onTap: () => _showMessageDetails(message),
                               ),
                             );
-                          }).toList(),
+                          }),
                         ],
                       ),
 

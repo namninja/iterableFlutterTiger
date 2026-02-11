@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:iterable_flutter_sdk/iterable_flutter_sdk.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'screens/home_screen.dart';
-import 'screens/user_screen.dart';
+
 import 'screens/events_screen.dart';
+import 'screens/home_screen.dart';
 import 'screens/messages_screen.dart';
 import 'screens/settings_screen.dart';
-import 'utils/iterable_config.dart';
+import 'screens/user_screen.dart';
 import 'utils/constants.dart';
+import 'utils/iterable_config.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +23,7 @@ Future<void> _initializeIterable() async {
     // Initialize the SDK
     await IterableFlutterSdk.initialize(
       apiKey: IterableAppConfig.apiKey,
-      config: IterableConfig(
+      config: const IterableConfig(
         autoPushRegistration: true,  // Automatic push token registration
         enableEmbeddedMessaging: true,
         // logLevel removed in iOS SDK 6.6.6 - controlled via native logDelegate
