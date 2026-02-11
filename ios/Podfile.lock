@@ -1,0 +1,36 @@
+PODS:
+  - Flutter (1.0.0)
+  - Iterable-iOS-SDK (6.6.6)
+  - iterable_flutter_sdk (0.1.0):
+    - Flutter
+    - Iterable-iOS-SDK (~> 6.6.3)
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - iterable_flutter_sdk (from `.symlinks/plugins/iterable_flutter_sdk/ios`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
+
+SPEC REPOS:
+  trunk:
+    - Iterable-iOS-SDK
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  iterable_flutter_sdk:
+    :path: ".symlinks/plugins/iterable_flutter_sdk/ios"
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
+
+SPEC CHECKSUMS:
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  Iterable-iOS-SDK: 93564402640ed20be5f56157d26e220445b64ad9
+  iterable_flutter_sdk: 45d883af9b33d688bdeb92ffab775e1863ed1a9f
+  shared_preferences_foundation: 7036424c3d8ec98dfe75ff1667cb0cd531ec82bb
+
+PODFILE CHECKSUM: 73dd3965a3ca52bbfc84ad91674fb6bbc0cc40a6
+
+COCOAPODS: 1.16.2

@@ -1,0 +1,43 @@
+name: iterable_flutter_tiger
+description: A Flutter test app for Iterable SDK with similar functionality to IterableTiger React Native app
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  # Using path dependency for local development
+  # Replace with your actual iterable_flutter_sdk location or pub dependency
+  iterable_flutter_sdk:
+    path: ../iterable-flutter-sdk
+  
+  # UI and Navigation
+  flutter_svg: ^2.0.9
+  provider: ^6.1.1
+  
+  # Storage
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+
+  # Fonts commented out - using system fonts
+  # Uncomment and add font files to assets/fonts/ if needed
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: assets/fonts/Roboto-Regular.ttf
+  #       - asset: assets/fonts/Roboto-Bold.ttf
+  #         weight: 700
