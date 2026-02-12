@@ -3,7 +3,6 @@ package com.reiterableCoffee.iterableFlutterTiger
 import android.util.Log
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
-import com.iterable.iterableapi.IterableApi
 import com.iterable.iterablefluttersdk.IterableFlutterSdkPlugin
 
 class MyFirebaseMessagingService : FirebaseMessagingService() {
@@ -20,14 +19,11 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         Log.d(TAG, "📱 New FCM Token: $token")
         
         // Store token in Flutter plugin for UI display
+        // The Iterable SDK will automatically use this token when the user
+        // calls setEmail/setUserId with autoPushRegistration enabled
         IterableFlutterSdkPlugin.storeDeviceToken(token)
         
-        // Register token with Iterable SDK
-        // Note: This will automatically register when user calls setEmail/setUserId
-        // if autoPushRegistration is true
-        IterableApi.getInstance().registerDeviceToken()
-        
-        Log.d(TAG, "✅ Token stored and registered with Iterable")
+        Log.d(TAG, "✅ Token stored in Flutter plugin")
     }
 
     /**

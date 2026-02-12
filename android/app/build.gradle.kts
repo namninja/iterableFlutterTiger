@@ -44,5 +44,8 @@ flutter {
     source = "../.."
 }
 
-// Note: Firebase Messaging is already included via the Iterable Android SDK
-// (com.iterable:iterableapi includes firebase-messaging as a dependency)
+dependencies {
+    // Firebase Messaging - Required for direct use in app code
+    // Note: Iterable SDK also includes it, but we need it explicitly for our FirebaseMessagingService
+    implementation("com.google.firebase:firebase-messaging:24.1.0")
+}
